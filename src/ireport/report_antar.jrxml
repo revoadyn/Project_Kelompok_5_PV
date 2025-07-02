@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="12509fe7-d010-4810-9ac4-94d6ef2ed0f1">
+	<property name="ireport.zoom" value="1.771561000000001"/>
+	<property name="ireport.x" value="387"/>
+	<property name="ireport.y" value="89"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_antar.`kode_antar` AS tb_antar_kode_antar,
+     tb_antar.`tipe` AS tb_antar_tipe,
+     tb_antar.`biaya` AS tb_antar_biaya
+FROM
+     `tb_antar` tb_antar]]>
+	</queryString>
+	<field name="tb_antar_kode_antar" class="java.lang.String"/>
+	<field name="tb_antar_tipe" class="java.lang.String"/>
+	<field name="tb_antar_biaya" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="5" width="253" height="40" forecolor="#003399" uuid="dc0b9b2e-f0cc-40dd-a4c9-8f44e64f91aa"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Comic Sans MS" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Antar-Jemput]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="40" width="224" height="36" forecolor="#003399" uuid="57f42cb0-538d-4832-b4ab-4b8f2adc7136"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Comic Sans MS" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SATZSETZ LAUNDRY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="60" width="185" height="34" forecolor="#CC0000" uuid="9cd65c98-00d4-46b5-aa0e-dc04f00abd7a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Brush Script MT" size="20"/>
+				</textElement>
+				<text><![CDATA[Laundry & Dry Cleaning Service]]></text>
+			</staticText>
+			<image>
+				<reportElement x="37" y="5" width="100" height="100" uuid="03198ca0-31d1-451d-a9af-23ae3a9f9c6c"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\OneDrive\\Dokumen\\NetBeansProjects\\MyLaundry\\src\\gambar\\laundry.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="413" y="5" width="100" height="100" uuid="faf870d0-81a6-4dd4-9de7-e66a68c6337c"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\OneDrive\\Dokumen\\NetBeansProjects\\MyLaundry\\src\\gambar\\laundry.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="cf034b21-0f52-42bb-90ec-7056fc65d1e1"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="14" width="185" height="20" forecolor="#000000" uuid="5fc9128f-11a0-4d0e-9223-68ae8cd407a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kode Antar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="185" y="14" width="185" height="20" forecolor="#000000" uuid="2706cc65-6e22-4bd4-a9e2-e730f011ce44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tipe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="370" y="19" width="185" height="15" forecolor="#000000" uuid="2a00ccc3-5bbc-4239-b507-3e4e649c242c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tambahan Biaya]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="3" width="555" height="1" forecolor="#003399" uuid="6e33b071-0eca-4800-9a8b-bbf792dc9b90"/>
+				<graphicElement>
+					<pen lineWidth="3.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="13" width="555" height="1" uuid="05898391-948b-4bef-9e2f-02342c08293c"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="14" width="1" height="21" uuid="ec528b24-bc47-49bc-a06f-831ceadd5287"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="184" y="13" width="1" height="21" uuid="b38f4506-41b7-4a17-9646-07c39c58ae61"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="369" y="14" width="1" height="21" uuid="ff305472-3c70-48d7-b3f9-6f854aa4250c"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="554" y="14" width="1" height="22" uuid="ddfbb242-9eb9-46f1-bd46-7f6b6307bd31"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="daade295-fae4-4e11-9236-72de1468b96b"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="185" height="15" uuid="69ef1288-8b0b-41e9-b7bd-d2cb736fee38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_antar_kode_antar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="185" y="0" width="185" height="15" uuid="e5a9352d-51dd-4745-a223-127a0a72d6ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_antar_tipe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="370" y="0" width="185" height="15" uuid="1bb1b46b-5990-4bcf-95c2-5d386e84f7ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_antar_biaya}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="-1" width="1" height="17" uuid="e62d081d-116d-4339-bf55-48a71534881b"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="184" y="-2" width="1" height="18" uuid="5df64428-9552-4c1d-8f69-ad5a195187dd"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="369" y="-1" width="1" height="17" uuid="ec5961df-9412-4287-9b8e-1b322f930edb"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="554" y="0" width="1" height="16" uuid="08ac5d21-f7c6-47af-818c-e68e37661e22"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="1" width="555" height="1" uuid="f38ef762-fb4f-40d4-be90-827e907988c6"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="7aee1a5b-a130-4963-851c-633551e41c2a"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="0bec08db-837b-4216-9b16-0c7f7c5c42ec"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="3dbedb6e-7fb6-4a4b-b6d4-e86405862c0e"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dabfc8a3-f58e-45f1-998e-41ed77e38123">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="198"/>
+	<property name="ireport.y" value="2"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_layanan.`id_layanan` AS tb_layanan_id_layanan,
+     tb_layanan.`layanan` AS tb_layanan_layanan,
+     tb_layanan.`estimasi_waktu` AS tb_layanan_estimasi_waktu,
+     tb_layanan.`harga` AS tb_layanan_harga,
+     tb_layanan.`keterangan` AS tb_layanan_keterangan
+FROM
+     `tb_layanan` tb_layanan]]>
+	</queryString>
+	<field name="tb_layanan_id_layanan" class="java.lang.String"/>
+	<field name="tb_layanan_layanan" class="java.lang.String"/>
+	<field name="tb_layanan_estimasi_waktu" class="java.lang.String"/>
+	<field name="tb_layanan_harga" class="java.lang.Integer"/>
+	<field name="tb_layanan_keterangan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement x="173" y="15" width="207" height="45" forecolor="#003399" uuid="148e882f-3f74-4b94-93bf-fca89744cc3a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Comic Sans MS" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Layanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="56" width="242" height="36" forecolor="#003399" uuid="2fab8b00-fef9-48e5-8ace-a395244d0c67"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Comic Sans MS" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SATZSETZ LAUNDRY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="167" y="79" width="230" height="29" forecolor="#CC0000" uuid="b0bb004d-e9c5-4e42-b95e-f319a0dcaffe"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Brush Script MT" size="20"/>
+				</textElement>
+				<text><![CDATA[Laundry & Dry Cleaning Service]]></text>
+			</staticText>
+			<image>
+				<reportElement x="21" y="10" width="100" height="100" uuid="a6eaf0ce-99f3-4869-a513-ca802555d5d8"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\OneDrive\\Dokumen\\NetBeansProjects\\MyLaundry\\src\\gambar\\laundry.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="431" y="10" width="100" height="100" uuid="0dace398-122c-4fd2-9a88-f4a8c8e11f4f"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\OneDrive\\Dokumen\\NetBeansProjects\\MyLaundry\\src\\gambar\\laundry.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" forecolor="#000000" uuid="9ca9acfd-f809-4936-9e28-b0b453ca052c"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="17" width="95" height="17" forecolor="#000000" uuid="3f826d34-b46b-4427-97b1-ffa6129a25b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID Layanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="96" y="17" width="126" height="17" forecolor="#000000" uuid="93764295-d27b-4eb7-89a0-9fa9bea19ba1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Layanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="222" y="17" width="100" height="17" forecolor="#000000" uuid="efa507e4-5107-4d26-b75d-7ee7ec2deb69"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Estimasi Waktu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="323" y="17" width="96" height="17" forecolor="#000000" uuid="e20ac146-a4be-434e-bd53-d1e75c262eec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Harga per Kg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="419" y="17" width="136" height="17" forecolor="#000000" uuid="f298d3c1-8fe1-46e5-8a24-be083ce35d31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" forecolor="#003399" uuid="20d93f40-36e3-472a-9497-00d3ce2af8e1"/>
+				<graphicElement>
+					<pen lineWidth="3.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="-1" y="16" width="556" height="1" forecolor="#000000" uuid="e3c269f7-5e87-4a8d-a8a5-db3a2711c2c9"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="-1" y="16" width="1" height="19" uuid="07b7536b-774c-44bb-a97a-e1b29cca6860"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="95" y="16" width="1" height="19" uuid="c40ecc48-8c47-45f7-babe-0b2d00b1fa20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="221" y="16" width="1" height="19" uuid="41f66919-28b3-4961-9f30-81c9e0bf4af9"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="322" y="16" width="1" height="19" uuid="1fcdd24c-f284-4af3-beab-3992705d639a"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="418" y="17" width="1" height="18" uuid="1e8e0fdb-236c-4976-95b3-03c10e1380c9"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="554" y="17" width="1" height="18" uuid="927ccda7-b1d1-49e7-b00e-81c3ff654f71"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="9bf8b3c7-8e73-4555-8d76-8dbab886b87d"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="95" height="15" forecolor="#000000" uuid="a323a94e-3966-422f-8880-fd325f021192"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_layanan_id_layanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="96" y="0" width="126" height="15" forecolor="#000000" uuid="df4ca2ac-f8cb-4907-8e4a-ea1c44dfc250"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_layanan_layanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="222" y="0" width="100" height="15" forecolor="#000000" uuid="ff0cdbbb-638e-4504-a032-e1adcbba9a00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_layanan_estimasi_waktu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="323" y="1" width="96" height="15" forecolor="#000000" uuid="921078a3-3db6-4981-b678-c5cfee87c1cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_layanan_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="419" y="0" width="136" height="15" forecolor="#000000" uuid="73431b29-9a9f-4bd7-8e17-95bc309f992f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_layanan_keterangan}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-1" y="-1" width="1" height="16" uuid="81d4cb04-b51d-4850-92eb-f0753684ab9e"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="95" y="-1" width="1" height="16" uuid="d1071181-cf5b-4dce-89f5-03bfb585e409"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="221" y="-1" width="1" height="16" uuid="4dd7bed4-834b-4311-a91e-07d058a8b4fa"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="322" y="-1" width="1" height="16" uuid="82d05a33-07da-4a5d-8f15-db0c258c1300"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="418" y="-1" width="1" height="16" uuid="501f6970-3dec-48a7-b5b3-55d573c4dc50"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="554" y="-1" width="1" height="16" uuid="4ad88b70-b8ad-47fe-9b0e-e3bca13548cc"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="0eb24961-8956-4f14-8b25-11ee9fd936ba"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="ecf7aa7b-c556-479a-9d25-124f93f975d4"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="41ea3de0-010b-4108-bfdb-fe6e6b081f23"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="0d5a5f7c-438d-4122-827b-8704be6ac704"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

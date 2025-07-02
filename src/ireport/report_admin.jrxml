@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c8c86479-d272-4206-bf73-4fc4bafcaa40">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_login.`id_admin` AS tb_login_id_admin,
+     tb_login.`password` AS tb_login_password,
+     tb_login.`nama` AS tb_login_nama
+FROM
+     `tb_login` tb_login]]>
+	</queryString>
+	<field name="tb_login_id_admin" class="java.lang.String"/>
+	<field name="tb_login_password" class="java.lang.String"/>
+	<field name="tb_login_nama" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement x="159" y="34" width="239" height="37" forecolor="#003399" uuid="a6f949d5-21fd-4256-ba6b-4b61e84c3c3b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Comic Sans MS" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SATZSETZ LAUNDRY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="61" width="185" height="29" forecolor="#CC0000" uuid="53a74e22-95ab-45b5-a3f3-8862636af02c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Brush Script MT" size="22"/>
+				</textElement>
+				<text><![CDATA[Laundry & Dry Cleaning Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="0" width="150" height="45" forecolor="#003399" uuid="39f6fd42-581b-4f7c-99eb-0e18b2e8d8f3"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Comic Sans MS" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Admin]]></text>
+			</staticText>
+			<image>
+				<reportElement x="26" y="5" width="100" height="100" uuid="44a65d48-2d3c-4ed5-8bd1-a391062bd3ab"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\OneDrive\\Dokumen\\NetBeansProjects\\MyLaundry\\src\\gambar\\laundry.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="433" y="5" width="100" height="100" uuid="dea2acbc-01fb-4189-8d97-5eaa5a4a52de"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\OneDrive\\Dokumen\\NetBeansProjects\\MyLaundry\\src\\gambar\\laundry.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="1" y="35" width="554" height="1" uuid="cfed93f1-1332-40c3-9f52-3b6fce4b1e68"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="11" width="146" height="23" forecolor="#000000" uuid="4bcea49b-468c-4af6-87a0-e485c28bdf06"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[ID Admin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="147" y="11" width="196" height="22" forecolor="#000000" uuid="d716e7f5-cc51-40f6-b4c5-a752a9fa979b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="344" y="11" width="209" height="22" forecolor="#000000" uuid="4b2db10d-eb00-4516-bc12-630b3b5dbb90"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Nama Lengkap]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="2" width="554" height="1" forecolor="#003399" uuid="9adf6cd3-017a-47bc-94ac-82aa532cef62"/>
+				<graphicElement>
+					<pen lineWidth="3.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="146" y="11" width="1" height="25" uuid="9c252e75-b2de-43f9-ac3e-379bfcc7e785"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="343" y="10" width="1" height="25" uuid="765d61a4-6dbd-4d63-be39-88186960e4c3"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="9" width="1" height="26" uuid="a37f261a-dca9-462e-8645-2bb196c46e6f"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="1" y="9" width="554" height="2" uuid="84e233f4-00fc-4045-bf36-92d7a4043501"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="554" y="11" width="1" height="25" uuid="289cd277-170e-4fe6-8d38-39f8867b4472"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="1" y="23" width="554" height="1" uuid="9b8f5db7-42c5-4fac-9fc1-21b43a9a2007"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="2" y="0" width="144" height="22" uuid="c7df3b42-4df6-43ca-a664-cee6754e2cbf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_login_id_admin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="147" y="0" width="196" height="23" uuid="c9a1d919-e9cc-46fc-a691-4d0830a10ef3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_login_password}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="146" y="-3" width="1" height="25" uuid="e067b9b0-540b-486f-9594-e5fe46ac0dd5"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="343" y="0" width="1" height="22" uuid="5f71b461-7d4d-4cef-ae04-f6ccacf60156"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="344" y="0" width="209" height="23" uuid="11f6b63e-a3d4-4de0-960e-49cefc1a9897"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_login_nama}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="-1" width="1" height="24" uuid="1e6f2e92-0ab4-4d37-86fe-1def71a4949a"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="554" y="0" width="1" height="24" uuid="c71d21a9-503f-4c85-8709-e7a431ff63a1"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="05ffd2c6-c02e-4622-bc80-176a1a656de3"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="8f334d17-2c70-485f-9fef-79af23dbbc58"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="08d9f0b4-9be8-4119-af1c-46809e8bc896"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="d2f52fcb-5140-4721-8935-7973bc81547c"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
